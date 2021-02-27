@@ -12,12 +12,11 @@ export default class Character {
       'Undead',
       'Zombie',
     ];
-    if (name.length < 2 || name.length > 10 ) {
-      throw new Error("Ошибка!Длина имени должна быть минимум 2 символа и максимум 10 символов")
+    if (name.length < 2 || name.length > 10) {
+      throw new Error('Ошибка!Длина имени должна быть минимум 2 символа и максимум 10 символов');
     }
     if (!unitsType.includes(type)) {
-      throw new Error("Ошибка!Неправильный тип персонажа")
+      throw new Error('Ошибка!Неправильный тип персонажа');
     }
   }
-
 }

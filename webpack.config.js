@@ -1,22 +1,24 @@
+/* eslint-disable linebreak-style */
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  // eslint-disable-next-line linebreak-style
   target: 'web',
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    chunkLoading : false , 
-    wasmLoading : false , 
+    chunkLoading: false,
+    wasmLoading: false,
   },
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, '/dist'),
     open: true,
     compress: true,
-      },
+  },
   module: {
     rules: [
       {
